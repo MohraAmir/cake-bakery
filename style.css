@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body {
+        background: #ff0080;
+        margin: 0;
+        padding: 0;
+    }
+    
+.all{
+    width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+.nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 30px;
+}
+
+.nav-img img{
+    width:180px;
+    height: 60px;
+}
+
+.nav-links{
+    display: flex;
+    gap:50px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        transition: 0.3s;
+}
+.nav-links a:hover{
+    color:#ff0080;
+    letter-spacing: 1px;
+}
+.nav-icons{
+    display: flex;
+        align-items: center;
+        gap: 20px;
+}
+.left,.right {
+    width: 50%;
+}
+.content{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.content h2{
+    font-size:30px;
+    font-family: 'Layer Style', cursive;
+}
+.content h1{
+    font-size: 60px;
+    font-family:'Layer Style', cursive;
+}
+
+.pink{
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ff0080 ;
+    cursor: pointer;
+    background: #ff0080;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.pink:hover {
+    color:#ff0080;
+    background: #ffffffad;
+    letter-spacing: 2px;
+    border: 1px solid #ff0080;
+
+}
+.white {
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ff0080;     
+    cursor: pointer;
+    background: white;
+    color: #ff0080;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.white:hover {
+    color: #ffffff;
+    background: #ff0080;
+    letter-spacing: 2px;
+
+}
+.right img{
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
